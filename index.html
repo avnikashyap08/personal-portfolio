@@ -1,60 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avni Kashyap</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avni Kashyap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<header>
-    <h1>Avni Kashyap</h1>
-    <p>Computer Science Student | Aspiring Developer</p>
-</header>
+  <!-- Ambient background dots -->
+  <div class="bg-grid" aria-hidden="true"></div>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a Computer Science student currently learning Python and Web Development.
-        I enjoy building simple projects and exploring new technologies.
-    </p>
-</section>
-
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>C</li>
-        <li>HTML</li>
-        <li>CSS</li>
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">AK</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-</section>
+  </nav>
 
-<section>
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>Personal Portfolio</h3>
-        <p>A simple responsive website to showcase my work.</p>
+  <!-- HERO -->
+  <header id="hero">
+    <div class="hero-inner">
+      <p class="hero-tag">Hello, world —</p>
+      <h1 class="hero-name">
+        Avni<br /><em>Kashyap</em>
+      </h1>
+      <p class="hero-sub">CS Student&nbsp; ·&nbsp; Builder&nbsp; ·&nbsp; Always learning</p>
+      <a href="#projects" class="cta-btn">See my work ↓</a>
     </div>
-
-    <div class="project">
-        <h3>Simple Calculator</h3>
-        <p>A browser calculator built using HTML, CSS and JavaScript.</p>
+    <div class="hero-deco" aria-hidden="true">
+      <span class="circle c1"></span>
+      <span class="circle c2"></span>
+      <code class="float-code">&lt;/curious&gt;</code>
     </div>
+  </header>
 
-</section>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-label">01 / About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Building things,<br /><em>one project at a time.</em></h2>
+        <p>
+          I'm a second-year Computer Science student at KIIT, passionate about
+          web development, Python, and anything that sits at the intersection of
+          logic and creativity. I learn by doing — every project teaches me
+          something new.
+        </p>
+        <p>
+          Currently levelling up in full-stack development and AI/ML.
+          When I'm not coding, you'll find me journaling or going for a swim.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num">2nd</span><span class="stat-label">Year at KIIT</span></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects built</span></div>
+        <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Things to learn</span></div>
+      </div>
+    </div>
+  </section>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: avnikashyap777@gmail.com</p>
-</section>
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-label">02 / Skills</div>
+    <h2>What I work with</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">🐍</div>
+        <h3>Python</h3>
+        <p>Scripts, data, automation — my first love in programming.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <h3>HTML & CSS</h3>
+        <p>Semantic markup, Flexbox layouts, responsive design.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <h3>JavaScript</h3>
+        <p>DOM manipulation, event handling, React (Vite + hooks).</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⚙️</div>
+        <h3>C</h3>
+        <p>Memory management, algorithms, and understanding the fundamentals.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🗄️</div>
+        <h3>SQL & FastAPI</h3>
+        <p>PostgreSQL databases, REST APIs, backend fundamentals.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🔧</div>
+        <h3>Tools</h3>
+        <p>Git, VS Code, GitHub Pages, Render — building and shipping.</p>
+      </div>
+    </div>
+  </section>
 
-<footer>
-    <p>© 2026 Avni Kashyap</p>
-</footer>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-label">03 / Projects</div>
+    <h2>Things I've built</h2>
+    <div class="projects-list">
+
+      <div class="project-card featured">
+        <div class="project-meta">
+          <span class="project-tag">Full-Stack</span>
+          <span class="project-tag">Deployed</span>
+        </div>
+        <h3>Around the Corner</h3>
+        <p>
+          A web app for discovering nearby places — restaurants, cafes, parks —
+          built with FastAPI, PostgreSQL, and vanilla HTML/CSS/JS. Deployed on
+          Render (backend) and GitHub Pages (frontend).
+        </p>
+        <div class="project-stack">
+          <code>FastAPI</code><code>PostgreSQL</code><code>JavaScript</code><code>GitHub Pages</code>
+        </div>
+        <a href="#" class="project-link">View project →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-meta">
+          <span class="project-tag">React</span>
+        </div>
+        <h3>Taylor Swift Quiz App</h3>
+        <p>
+          A fun multi-round trivia quiz rebuilt in React — using Vite,
+          useState, props, and component-based architecture.
+        </p>
+        <div class="project-stack">
+          <code>React</code><code>Vite</code><code>CSS</code>
+        </div>
+        <a href="#" class="project-link">View project →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-meta">
+          <span class="project-tag">JavaScript</span>
+        </div>
+        <h3>Mood Tracker</h3>
+        <p>
+          A daily mood logging mini-app built with vanilla JS — DOM
+          manipulation, local arrays, and simple UI interactions.
+        </p>
+        <div class="project-stack">
+          <code>HTML</code><code>CSS</code><code>JavaScript</code>
+        </div>
+        <a href="#" class="project-link">View project →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-meta">
+          <span class="project-tag">JavaScript</span>
+        </div>
+        <h3>Browser Calculator</h3>
+        <p>
+          A clean, functional calculator built with HTML, CSS, and JavaScript.
+          One of my first complete JS projects.
+        </p>
+        <div class="project-stack">
+          <code>HTML</code><code>CSS</code><code>JavaScript</code>
+        </div>
+        <a href="#" class="project-link">View project →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-label">04 / Contact</div>
+    <div class="contact-inner">
+      <h2>Let's connect</h2>
+      <p>I'm always open to chatting about projects, tech, or opportunities.</p>
+      <a href="mailto:avnikashyap777@gmail.com" class="contact-email">
+        avnikashyap777@gmail.com
+      </a>
+      <div class="contact-links">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed & built by <strong>Avni Kashyap</strong> &nbsp;·&nbsp; © 2026</p>
+  </footer>
+
+
+  <script>
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      }),
+      { threshold: 0.12 }
+    );
+    document.querySelectorAll('.section').forEach(s => observer.observe(s));
+  </script>
 
 </body>
 </html>
