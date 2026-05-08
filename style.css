@@ -1,12 +1,13 @@
+/* ─── TOKENS ────────────────────────────────────────────── */
 :root {
-  --bg:        #0e0e0e;
-  --surface:   #161616;
-  --border:    #252525;
-  --accent:    #f0a500;
-  --accent2:   #e05c2a;
-  --text:      #e8e0d4;
-  --muted:     #7a7269;
-  --code-bg:   #1e1e1e;
+  --bg:        #F8ECD1;
+  --surface:   #f2e0c0;
+  --border:    #DEB6AB;
+  --accent:    #85586F;
+  --accent2:   #AC7D88;
+  --text:      #3a2530;
+  --muted:     #AC7D88;
+  --code-bg:   #eddfc4;
 
   --font-serif: 'DM Serif Display', Georgia, serif;
   --font-sans:  'DM Sans', sans-serif;
@@ -15,6 +16,7 @@
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* ─── RESET ─────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
@@ -27,19 +29,21 @@ body {
   overflow-x: hidden;
 }
 
+/* ─── BG GRID ────────────────────────────────────────────── */
 .bg-grid {
   position: fixed;
   inset: 0;
   z-index: 0;
   background-image:
-    radial-gradient(circle at 20% 20%, rgba(240,165,0,0.06) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(224,92,42,0.05) 0%, transparent 50%),
-    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+    radial-gradient(circle at 20% 20%, rgba(133,88,111,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(172,125,136,0.07) 0%, transparent 50%),
+    linear-gradient(rgba(133,88,111,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(133,88,111,0.04) 1px, transparent 1px);
   background-size: auto, auto, 60px 60px, 60px 60px;
   pointer-events: none;
 }
 
+/* ─── NAV ────────────────────────────────────────────────── */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -48,9 +52,9 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 3rem;
-  background: rgba(14,14,14,0.85);
+  background: rgba(248,236,209,0.88);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(172,125,136,0.3);
 }
 
 .nav-logo {
@@ -78,6 +82,7 @@ nav {
 
 .nav-links a:hover { color: var(--text); }
 
+/* ─── HERO ───────────────────────────────────────────────── */
 #hero {
   position: relative;
   min-height: 100vh;
@@ -132,7 +137,7 @@ nav {
   margin-top: 2.5rem;
   padding: 0.75rem 1.75rem;
   background: var(--accent);
-  color: #0e0e0e;
+  color: #F8ECD1;
   font-family: var(--font-mono);
   font-size: 0.85rem;
   font-weight: 500;
@@ -145,10 +150,11 @@ nav {
 }
 
 .cta-btn:hover {
-  background: #ffd166;
+  background: #AC7D88;
   transform: translateY(-2px);
 }
 
+/* Decorative hero shapes */
 .hero-deco {
   position: absolute;
   right: 4rem;
@@ -166,14 +172,14 @@ nav {
 .c1 {
   width: 320px; height: 320px;
   top: -160px; right: -60px;
-  border-color: rgba(240,165,0,0.15);
+  border-color: rgba(133,88,111,0.2);
   animation: spin 30s linear infinite;
 }
 
 .c2 {
   width: 200px; height: 200px;
   top: -100px; right: 20px;
-  border-color: rgba(224,92,42,0.1);
+  border-color: rgba(172,125,136,0.15);
   animation: spin 20s linear infinite reverse;
 }
 
@@ -187,6 +193,7 @@ nav {
   animation: float 6s ease-in-out infinite;
 }
 
+/* ─── SECTIONS ───────────────────────────────────────────── */
 .section {
   position: relative;
   z-index: 2;
@@ -218,6 +225,7 @@ nav {
   font-style: italic;
 }
 
+/* ─── ABOUT ──────────────────────────────────────────────── */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 220px;
@@ -256,6 +264,7 @@ nav {
   letter-spacing: 0.05em;
 }
 
+/* ─── SKILLS ─────────────────────────────────────────────── */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -270,7 +279,7 @@ nav {
   transition: background 0.25s;
 }
 
-.skill-card:hover { background: #1c1c1c; }
+.skill-card:hover { background: #eedad8; }
 
 .skill-icon {
   font-size: 1.5rem;
@@ -292,6 +301,7 @@ nav {
   line-height: 1.6;
 }
 
+/* ─── PROJECTS ───────────────────────────────────────────── */
 .projects-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -309,12 +319,12 @@ nav {
   transition: background 0.25s;
 }
 
-.project-card:hover { background: #181818; }
+.project-card:hover { background: #eddab8; }
 
 .project-card.featured {
   grid-column: 1 / -1;
-  border-bottom: 1px solid var(--border);
-  background: #131313;
+  border-bottom: 1px solid rgba(172,125,136,0.3);
+  background: #f0dfc0;
 }
 
 .project-meta {
@@ -329,7 +339,7 @@ nav {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent);
-  border: 1px solid rgba(240,165,0,0.3);
+  border: 1px solid rgba(133,88,111,0.35);
   padding: 0.2rem 0.5rem;
   border-radius: 2px;
 }
@@ -378,6 +388,7 @@ nav {
 
 .project-link:hover { opacity: 0.7; }
 
+/* ─── CONTACT ────────────────────────────────────────────── */
 #contact { text-align: center; }
 
 .contact-inner { max-width: 540px; margin: 0 auto; }
@@ -394,7 +405,7 @@ nav {
   font-size: 1rem;
   color: var(--accent);
   text-decoration: none;
-  border: 1px solid rgba(240,165,0,0.3);
+  border: 1px solid rgba(133,88,111,0.35);
   padding: 1rem 2rem;
   border-radius: 2px;
   transition: background 0.2s, border-color 0.2s;
@@ -402,7 +413,7 @@ nav {
 }
 
 .contact-email:hover {
-  background: rgba(240,165,0,0.07);
+  background: rgba(133,88,111,0.07);
   border-color: var(--accent);
 }
 
@@ -423,6 +434,7 @@ nav {
 
 .contact-links a:hover { color: var(--text); }
 
+/* ─── FOOTER ─────────────────────────────────────────────── */
 footer {
   position: relative;
   z-index: 2;
@@ -436,6 +448,7 @@ footer {
 
 footer strong { color: var(--text); font-weight: 400; }
 
+/* ─── ANIMATIONS ─────────────────────────────────────────── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -450,6 +463,7 @@ footer strong { color: var(--text); font-weight: 400; }
   50%       { transform: translateY(-12px); }
 }
 
+/* Scroll-triggered fade-in for sections */
 .section {
   opacity: 0;
   transform: translateY(24px);
@@ -461,6 +475,7 @@ footer strong { color: var(--text); font-weight: 400; }
   transform: translateY(0);
 }
 
+/* ─── RESPONSIVE ─────────────────────────────────────────── */
 @media (max-width: 700px) {
   nav { padding: 1rem 1.5rem; }
   .nav-links { gap: 1.2rem; }
@@ -486,3 +501,5 @@ footer strong { color: var(--text); font-weight: 400; }
     grid-column: auto;
   }
 }
+
+/* Inline scroll observer script */
