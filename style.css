@@ -1,4 +1,3 @@
-/* ─── TOKENS ────────────────────────────────────────────── */
 :root {
   --bg:        #F8ECD1;
   --surface:   #f2e0c0;
@@ -16,7 +15,6 @@
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ─── RESET ─────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
@@ -29,7 +27,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ─── BG GRID ────────────────────────────────────────────── */
 .bg-grid {
   position: fixed;
   inset: 0;
@@ -43,7 +40,6 @@ body {
   pointer-events: none;
 }
 
-/* ─── NAV ────────────────────────────────────────────────── */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -82,7 +78,6 @@ nav {
 
 .nav-links a:hover { color: var(--text); }
 
-/* ─── HERO ───────────────────────────────────────────────── */
 #hero {
   position: relative;
   min-height: 100vh;
@@ -154,7 +149,6 @@ nav {
   transform: translateY(-2px);
 }
 
-/* Decorative hero shapes */
 .hero-deco {
   position: absolute;
   right: 4rem;
@@ -193,7 +187,6 @@ nav {
   animation: float 6s ease-in-out infinite;
 }
 
-/* ─── SECTIONS ───────────────────────────────────────────── */
 .section {
   position: relative;
   z-index: 2;
@@ -225,7 +218,6 @@ nav {
   font-style: italic;
 }
 
-/* ─── ABOUT ──────────────────────────────────────────────── */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 220px;
@@ -264,7 +256,6 @@ nav {
   letter-spacing: 0.05em;
 }
 
-/* ─── SKILLS ─────────────────────────────────────────────── */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -301,7 +292,6 @@ nav {
   line-height: 1.6;
 }
 
-/* ─── PROJECTS ───────────────────────────────────────────── */
 .projects-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -388,7 +378,6 @@ nav {
 
 .project-link:hover { opacity: 0.7; }
 
-/* ─── CONTACT ────────────────────────────────────────────── */
 #contact { text-align: center; }
 
 .contact-inner { max-width: 540px; margin: 0 auto; }
@@ -434,7 +423,6 @@ nav {
 
 .contact-links a:hover { color: var(--text); }
 
-/* ─── FOOTER ─────────────────────────────────────────────── */
 footer {
   position: relative;
   z-index: 2;
@@ -448,7 +436,6 @@ footer {
 
 footer strong { color: var(--text); font-weight: 400; }
 
-/* ─── ANIMATIONS ─────────────────────────────────────────── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -463,7 +450,6 @@ footer strong { color: var(--text); font-weight: 400; }
   50%       { transform: translateY(-12px); }
 }
 
-/* Scroll-triggered fade-in for sections */
 .section {
   opacity: 0;
   transform: translateY(24px);
@@ -475,7 +461,6 @@ footer strong { color: var(--text); font-weight: 400; }
   transform: translateY(0);
 }
 
-/* ─── RESPONSIVE ─────────────────────────────────────────── */
 @media (max-width: 700px) {
   nav { padding: 1rem 1.5rem; }
   .nav-links { gap: 1.2rem; }
