@@ -1,12 +1,12 @@
 :root {
-  --bg:        #F8ECD1;
-  --surface:   #F0E4C4;
-  --border:    #E8D5A8;
-  --accent:    #85586F;
-  --accent2:   #AC7D88;
-  --text:      #3a2530;
-  --muted:     #AC7D88;
-  --code-bg:   #EDE0C0;
+  --bg:        #EDDFB3;
+  --surface:   #D8CCA3;
+  --border:    #B09B71;
+  --accent:    #87805E;
+  --accent2:   #B09B71;
+  --text:      #2C2A1E;
+  --muted:     #87805E;
+  --code-bg:   #D8CCA3;
 
   --font-serif: 'DM Serif Display', Georgia, serif;
   --font-sans:  'DM Sans', sans-serif;
@@ -32,10 +32,10 @@ body {
   inset: 0;
   z-index: 0;
   background-image:
-    radial-gradient(circle at 20% 20%, rgba(133,88,111,0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(172,125,136,0.07) 0%, transparent 50%),
-    linear-gradient(rgba(133,88,111,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(133,88,111,0.04) 1px, transparent 1px);
+    radial-gradient(circle at 20% 20%, rgba(135,128,94,0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(176,155,113,0.08) 0%, transparent 50%),
+    linear-gradient(rgba(135,128,94,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(135,128,94,0.05) 1px, transparent 1px);
   background-size: auto, auto, 60px 60px, 60px 60px;
   pointer-events: none;
 }
@@ -48,9 +48,9 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 3rem;
-  background: rgba(248,236,209,0.88);
+  background: rgba(237,223,179,0.9);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(172,125,136,0.3);
+  border-bottom: 1px solid rgba(176,155,113,0.4);
 }
 
 .nav-logo {
@@ -132,7 +132,7 @@ nav {
   margin-top: 2.5rem;
   padding: 0.75rem 1.75rem;
   background: var(--accent);
-  color: #F8ECD1;
+  color: #EDDFB3;
   font-family: var(--font-mono);
   font-size: 0.85rem;
   font-weight: 500;
@@ -145,7 +145,7 @@ nav {
 }
 
 .cta-btn:hover {
-  background: #AC7D88;
+  background: #B09B71;
   transform: translateY(-2px);
 }
 
@@ -166,14 +166,14 @@ nav {
 .c1 {
   width: 320px; height: 320px;
   top: -160px; right: -60px;
-  border-color: rgba(133,88,111,0.2);
+  border-color: rgba(135,128,94,0.25);
   animation: spin 30s linear infinite;
 }
 
 .c2 {
   width: 200px; height: 200px;
   top: -100px; right: 20px;
-  border-color: rgba(172,125,136,0.15);
+  border-color: rgba(176,155,113,0.2);
   animation: spin 20s linear infinite reverse;
 }
 
@@ -270,7 +270,7 @@ nav {
   transition: background 0.25s;
 }
 
-.skill-card:hover { background: #eedad8; }
+.skill-card:hover { background: #cfc49a; }
 
 .skill-icon {
   font-size: 1.5rem;
@@ -309,12 +309,12 @@ nav {
   transition: background 0.25s;
 }
 
-.project-card:hover { background: #eddab8; }
+.project-card:hover { background: #c9bc90; }
 
 .project-card.featured {
   grid-column: 1 / -1;
-  border-bottom: 1px solid rgba(172,125,136,0.3);
-  background: #f0dfc0;
+  border-bottom: 1px solid rgba(176,155,113,0.4);
+  background: #d4c89e;
 }
 
 .project-meta {
@@ -329,7 +329,7 @@ nav {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent);
-  border: 1px solid rgba(133,88,111,0.35);
+  border: 1px solid rgba(135,128,94,0.4);
   padding: 0.2rem 0.5rem;
   border-radius: 2px;
 }
@@ -394,7 +394,7 @@ nav {
   font-size: 1rem;
   color: var(--accent);
   text-decoration: none;
-  border: 1px solid rgba(133,88,111,0.35);
+  border: 1px solid rgba(135,128,94,0.4);
   padding: 1rem 2rem;
   border-radius: 2px;
   transition: background 0.2s, border-color 0.2s;
@@ -402,7 +402,7 @@ nav {
 }
 
 .contact-email:hover {
-  background: rgba(133,88,111,0.07);
+  background: rgba(135,128,94,0.08);
   border-color: var(--accent);
 }
 
@@ -486,5 +486,3 @@ footer strong { color: var(--text); font-weight: 400; }
     grid-column: auto;
   }
 }
-
-/* Inline scroll observer script */
