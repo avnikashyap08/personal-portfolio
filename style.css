@@ -1,12 +1,12 @@
 :root {
-  --bg:        #FAF6EE;
-  --surface:   #f2e0c0;
-  --border:    #DEB6AB;
+  --bg:        #F8ECD1;
+  --surface:   #F0EDED;
+  --border:    #E0D9D9;
   --accent:    #85586F;
   --accent2:   #AC7D88;
   --text:      #3a2530;
   --muted:     #AC7D88;
-  --code-bg:   #eddfc4;
+  --code-bg:   #EDE8E8;
 
   --font-serif: 'DM Serif Display', Georgia, serif;
   --font-sans:  'DM Sans', sans-serif;
